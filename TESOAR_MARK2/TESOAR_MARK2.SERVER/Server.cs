@@ -21,5 +21,29 @@ namespace TESOAR_MARK2.SERVER
         {
 
         }
+
+        private void manualMenu_Click( object sender, EventArgs e )
+        {
+            string filename = "manual.pdf";
+            System.Diagnostics.Process.Start(filename);
+        }
+
+        private void helpMenu_Click( object sender, EventArgs e )
+        {
+            Help help = new Help();
+            help.ShowDialog();
+        }
+
+        private void optionsMenu_Click( object sender, EventArgs e )
+        {
+            Options options = new Options();
+            options.ShowDialog();
+        }
+
+        private void settingsMenu_Click( object sender, EventArgs e )
+        {
+            Options options = new Options();
+            options.ShowDialog();
+        }
     }
 }
